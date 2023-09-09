@@ -9,11 +9,13 @@ const Stack = createStackNavigator();
 
 function HomeScreen({ navigation }) {
 
+  const slackProfilePic = 'https://ca.slack-edge.com/T05FFAA91JP-U05RAFQHND9-1259424329d2-512'
+
   return (
     <View style={[styles.container, { padding: 10 }]}>
       <View style={styles.imageView}>
         <View style={styles.profilePicsContainer}>
-          <Image source={require('./assets/slackProfilePicture.png')} style={styles.profilePics} />
+          <Image source={{uri: slackProfilePic}} style={styles.profilePics} />
         </View>
         <Text style={styles.slackName}>AjKenz</Text>
       </View>
@@ -54,7 +56,7 @@ const styles = StyleSheet.create({
   profilePics: {
     width: '100%',
     height: '100%',
-    resizeMode: 'stretch',
+    resizeMode: 'cover',
   },
   slackName: {
     fontWeight: 'bold',
