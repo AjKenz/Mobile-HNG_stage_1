@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "291d8f5f-22cf-44b5-b4ab-66cd6f8749e1"
+      }
+    },
+    "android": {
+      "package": "com.ajkenz.hngstage_1"
+    }
+  }
+}
